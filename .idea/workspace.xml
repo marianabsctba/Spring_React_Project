@@ -10,6 +10,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -67,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716167251919</updated>
       <workItem from="1716167252955" duration="1767000" />
-      <workItem from="1716170164775" duration="1187000" />
+      <workItem from="1716170164775" duration="2351000" />
     </task>
     <servers />
   </component>
