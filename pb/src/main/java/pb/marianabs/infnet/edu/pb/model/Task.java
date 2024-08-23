@@ -55,4 +55,13 @@ public class Task {
         task.setDescription(taskDTO.getDescription());
         return task;
     }
+
+    @Override
+    public String toString() {
+        return "Task {" +
+                "ID=" + id +
+                ", Title='" + title + '\'' +
+                ", Description='" + description + '\'' +
+                '}';
+    }
 }
