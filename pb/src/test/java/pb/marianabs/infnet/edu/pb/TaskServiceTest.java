@@ -36,15 +36,15 @@ public class TaskServiceTest {
     public void testCreateTask() {
         Task task = new Task();
         task.setId(1L);
-        task.setTitle("Titulo de teste");
-        task.setDescription("Descrição teste");
+        task.setTitle("Create Task");
+        task.setDescription("Description Create Task");
 
         when(taskRepository.save(any(Task.class))).thenReturn(task);
 
         TaskDTO createdTask = taskService.createTask(task.toDTO());
 
-        assertEquals("Titulo de teste", createdTask.getTitle());
-        verify(taskHistoryService, times(1)).logCreateAction(eq(1L), eq("username"), anyString());
+        assertEquals("Create Task", createdTask.getTitle());
+        verify(taskHistoryService, times(1)).logCreateAction(eq(1L), eq("User"), anyString());
     }
 
     @Test
@@ -62,7 +62,7 @@ public class TaskServiceTest {
         TaskDTO updatedTask = taskService.updateTask(1L, updatedDetails);
 
         assertEquals("Updated Task", updatedTask.getTitle());
-        verify(taskHistoryService, times(1)).logUpdateAction(eq(1L), eq("CurrentUser"), anyString(), anyString());
+        verify(taskHistoryService, times(1)).logUpdateAction(eq(1L), eq("User"), anyString(), anyString());
     }
 
     @Test
@@ -75,8 +75,8 @@ public class TaskServiceTest {
 
         taskService.deleteTask(1L);
 
-        verify(taskHistoryService, times(1)).logDeleteAction(eq(1L), eq("CurrentUser"), anyString());
-        verify(taskRepository, times(1)).deleteById(1L);
+        verify(taskHistoryService, times(1)).logDeleteAction(eq(1L), eq("User"), anyString());
+        verify(taskRepository, times(1)).delete(existingTask);
     }
 }
 
