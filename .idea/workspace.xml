@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="06e20bc7-bd04-4cc9-9ac1-b6bc9d3dd6e3" name="Changes" comment="refining code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" afterDir="false" />
@@ -22,6 +23,26 @@
       <change beforePath="$PROJECT_DIR$/frontend/src/components/EditTaskForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/EditTaskForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskList.js" afterDir="false" />
+=======
+    <list default="true" id="06e20bc7-bd04-4cc9-9ac1-b6bc9d3dd6e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pb/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/default-development/index.pack_" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pb/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/src/main/java/pb/marianabs/infnet/edu/pb/PbApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pb/src/main/java/pb/marianabs/infnet/edu/pb/PbApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pb/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pb/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/target/classes/pb/marianabs/infnet/edu/pb/PbApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/pb/target/classes/pb/marianabs/infnet/edu/pb/PbApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/target/classes/pb/marianabs/infnet/edu/pb/exception/TaskNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/pb/target/classes/pb/marianabs/infnet/edu/pb/exception/TaskNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/target/classes/pb/marianabs/infnet/edu/pb/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/pb/target/classes/pb/marianabs/infnet/edu/pb/model/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/target/classes/pb/marianabs/infnet/edu/pb/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/pb/target/classes/pb/marianabs/infnet/edu/pb/service/TaskService.class" afterDir="false" />
+>>>>>>> 0bacde92b6b084c7286a3575962dde558fa74868
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +55,22 @@
       <option value="module" />
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Monolith_SpringBoot_React-main\exportToHTML" />
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+>>>>>>> 0bacde92b6b084c7286a3575962dde558fa74868
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
     "state": "OPEN",
@@ -52,6 +83,8 @@
     "accountId": "c5b5f8df-a9cc-44fd-98c6-80f611a8c269"
   }
 }]]></component>
+=======
+>>>>>>> 0bacde92b6b084c7286a3575962dde558fa74868
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -62,6 +95,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
+=======
+    "Jest.Tests in frontend\\.executor": "Run",
+>>>>>>> 0bacde92b6b084c7286a3575962dde558fa74868
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -69,18 +106,43 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.PbApplication.executor": "Run",
     "git-widget-placeholder": "master",
+<<<<<<< HEAD
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mah_b/Downloads/TP3",
+=======
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mah_b/OneDrive/Área de Trabalho/eurekaserver-main",
+>>>>>>> 0bacde92b6b084c7286a3575962dde558fa74868
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+<<<<<<< HEAD
     "nodejs_package_manager_path": "npm",
+=======
+    "nodejs.jest.jest_package": "C:/Users/mah_b/Spring_React_Project/frontend/node_modules/react-scripts",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+>>>>>>> 0bacde92b6b084c7286a3575962dde558fa74868
     "settings.editor.selected.configurable": "vcs.Subversion",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+<<<<<<< HEAD
   <component name="RunManager">
+=======
+  <component name="RunManager" selected="Spring Boot.PbApplication">
+    <configuration name="Tests in frontend\" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/frontend/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/frontend" />
+      <envs />
+      <scope-kind value="DIRECTORY" />
+      <test-directory value="$PROJECT_DIR$/frontend" />
+      <method v="2" />
+    </configuration>
+>>>>>>> 0bacde92b6b084c7286a3575962dde558fa74868
     <configuration name="PbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="pb" />
@@ -89,6 +151,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="Jest.Tests in frontend\" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -110,8 +188,14 @@
       <option name="presentableId" value="Default" />
       <updated>1716167251919</updated>
       <workItem from="1716167252955" duration="1767000" />
+<<<<<<< HEAD
       <workItem from="1716170164775" duration="11763000" />
       <workItem from="1717354693698" duration="35000" />
+=======
+      <workItem from="1716170164775" duration="2351000" />
+      <workItem from="1726127290547" duration="2737000" />
+      <workItem from="1726130741065" duration="10395000" />
+>>>>>>> 0bacde92b6b084c7286a3575962dde558fa74868
     </task>
     <servers />
   </component>

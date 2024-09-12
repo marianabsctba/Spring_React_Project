@@ -1,0 +1,12 @@
+port: 8083  # Porta onde o microsserviço de usuários está rodando
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  # URL do Eureka Server
+    fetch-registry: true  # O cliente buscará outros serviços no registro do Eureka
+    register-with-eureka: true  # Registra este serviço no Eureka
+
+spring:
+  application:
+    name: todo-service  # Nome do microsserviço registrado no Eureka
