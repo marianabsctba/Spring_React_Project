@@ -6,6 +6,7 @@ import './App.css';
 
 function App() {
     const [tasks, setTasks] = useState([]);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         fetchTasks();
@@ -17,19 +18,21 @@ function App() {
                 auth: { username: 'admin', password: 'admin' }
             });
             setTasks(response.data);
+            setError(null); // Limpar qualquer erro anterior
         } catch (error) {
             console.error('Error fetching tasks', error);
+            setError('Failed to fetch tasks.');
         }
     };
 
     return (
         <div className="App">
             <h1>Task Manager</h1>
-            <TaskForm fetchTasks={fetchTasks} />
-            <TaskList tasks={tasks} fetchTasks={fetchTasks} />
+            {error && <div className="error">{error}</div>}
+            <TaskForm fetchTasks={fetchTasks} setError={setError} />
+            <TaskList tasks={tasks} fetchTasks={fetchTasks} setError={setError} />
         </div>
     );
 }
 
 export default App;
-

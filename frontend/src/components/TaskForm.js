@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const TaskForm = ({ fetchTasks }) => {
+const TaskForm = ({ fetchTasks, setError }) => {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    const [formError, setFormError] = useState(null);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -15,14 +16,19 @@ const TaskForm = ({ fetchTasks }) => {
             setTitle('');
             setDescription('');
             fetchTasks(); // Atualize a lista de tarefas após a criação
+            setFormError(null); // Limpar qualquer erro anterior
+            setError(null); // Limpar qualquer erro anterior
         } catch (error) {
             console.error('Error creating task', error);
+            setFormError('Failed to create task.');
+            setError('Failed to create task.');
         }
     };
 
     return (
         <form onSubmit={handleSubmit}>
             <h2>Create Task</h2>
+            {formError && <div className="error">{formError}</div>}
             <div>
                 <label>Title</label>
                 <input

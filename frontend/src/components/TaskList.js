@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import EditTaskForm from './EditTaskForm';
 
-const TaskList = ({ tasks, fetchTasks }) => {
+const TaskList = ({ tasks, fetchTasks, setError }) => {
     const [editing, setEditing] = useState(false);
     const [currentTask, setCurrentTask] = useState(null);
+    const [listError, setListError] = useState(null);
 
     const deleteTask = async (id) => {
         try {
@@ -12,8 +13,12 @@ const TaskList = ({ tasks, fetchTasks }) => {
                 auth: { username: 'admin', password: 'admin' }
             });
             fetchTasks();
+            setListError(null); // Limpar qualquer erro anterior
+            setError(null); // Limpar qualquer erro anterior
         } catch (error) {
             console.error('Error deleting task', error);
+            setListError('Failed to delete task.');
+            setError('Failed to delete task.');
         }
     };
 
@@ -25,11 +30,13 @@ const TaskList = ({ tasks, fetchTasks }) => {
     return (
         <div>
             <h2>Tasks</h2>
+            {listError && <div className="error">{listError}</div>}
             {editing ? (
                 <EditTaskForm
                     task={currentTask}
                     fetchTasks={fetchTasks}
                     setEditing={setEditing}
+                    setError={setError}
                 />
             ) : (
                 <ul>
@@ -47,4 +54,5 @@ const TaskList = ({ tasks, fetchTasks }) => {
 };
 
 export default TaskList;
+
 

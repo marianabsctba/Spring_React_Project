@@ -7,6 +7,12 @@
   padding: 20px;
 }
 
+/* Estilização das mensagens de erro */
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
 /* Estilização do formulário de tarefas */
 form {
   margin-bottom: 20px;
