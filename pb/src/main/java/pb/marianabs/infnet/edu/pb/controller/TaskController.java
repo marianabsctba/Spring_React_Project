@@ -3,6 +3,8 @@ package pb.marianabs.infnet.edu.pb.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pb.marianabs.infnet.edu.pb.dto.TaskDTO;
+import pb.marianabs.infnet.edu.pb.model.TaskHistory;
+import pb.marianabs.infnet.edu.pb.service.TaskHistoryService;
 import pb.marianabs.infnet.edu.pb.service.TaskService;
 
 import java.util.List;
@@ -13,6 +15,9 @@ public class TaskController {
 
     @Autowired
     private TaskService taskService;
+
+    @Autowired
+    private TaskHistoryService taskHistoryService;
 
     @GetMapping
     public List<TaskDTO> getAllTasks() {
@@ -37,5 +42,10 @@ public class TaskController {
     @DeleteMapping("/{id}")
     public void deleteTask(@PathVariable Long id) {
         taskService.deleteTask(id);
+    }
+
+    @GetMapping("/history")
+    public List<TaskHistory> getAllTaskHistory() {
+        return taskHistoryService.getAllTaskHistory();
     }
 }
