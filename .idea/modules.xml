@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Monolith_SpringBoot_React-main.iml" filepath="$PROJECT_DIR$/.idea/Monolith_SpringBoot_React-main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pb/pb.iml" filepath="$PROJECT_DIR$/pb/pb.iml" />
     </modules>
   </component>
 </project>
