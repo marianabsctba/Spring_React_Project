@@ -1,9 +1,8 @@
 package edu.br.infnet.mstasks.controller;
 
 import edu.br.infnet.mstasks.dto.TaskDTO;
-import edu.br.infnet.mstasks.model.TaskHistory;
-import edu.br.infnet.mstasks.service.TaskHistoryService;
 import edu.br.infnet.mstasks.service.TaskService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,13 +14,8 @@ import java.util.List;
 @RequestMapping("/api/tasks")
 public class TaskController {
 
-    private final TaskService taskService;
-    private final TaskHistoryService taskHistoryService;
-
-    public TaskController(TaskService taskService, TaskHistoryService taskHistoryService) {
-        this.taskService = taskService;
-        this.taskHistoryService = taskHistoryService;
-    }
+    @Autowired
+    private TaskService taskService;
 
     @GetMapping
     public ResponseEntity<List<TaskDTO>> getAllTasks() {
@@ -56,11 +50,5 @@ public class TaskController {
     public ResponseEntity<Void> deleteTask(@PathVariable Long taskId) {
         taskService.deleteTask(taskId);
         return ResponseEntity.noContent().build();
-    }
-
-    @GetMapping("/history")
-    public ResponseEntity<List<TaskHistory>> getAllTaskHistory() {
-        List<TaskHistory> taskHistory = taskHistoryService.getAllTaskHistory();
-        return ResponseEntity.ok(taskHistory);
     }
 }

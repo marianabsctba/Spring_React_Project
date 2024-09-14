@@ -4,32 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Monolith_SpringBoot_React-main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pb.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="feat: adjust project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/dto/TaskHistoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/producer/TaskHistoryProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-tasks/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-tasks/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/MsTasksApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/model/TaskHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/repository/TaskHistoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskHistoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/MsTasksApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/MsTasksApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/controller/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/controller/TaskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/model/TaskHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/model/TaskHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskHistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,10 +71,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.SpringReactProjectApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/raphael.costa/Desktop/Laboratorio/Infnet/Spring_React_Project/src/main/java/edu/br/infnet/mstasks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,6 +88,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Spring_React_Project" />
@@ -113,11 +134,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726292497390</updated>
-      <workItem from="1726292498400" duration="435000" />
+      <workItem from="1726292498400" duration="13975000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: adjust project">
+      <option name="closed" value="true" />
+      <created>1726293373950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726293373950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: adjust project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adjust project" />
   </component>
 </project>

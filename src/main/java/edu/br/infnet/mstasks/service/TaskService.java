@@ -3,6 +3,7 @@ package edu.br.infnet.mstasks.service;
 import edu.br.infnet.mstasks.dto.TaskDTO;
 import edu.br.infnet.mstasks.exception.TaskNotFoundException;
 import edu.br.infnet.mstasks.model.Task;
+import edu.br.infnet.mstasks.producer.TaskHistoryProducer;
 import edu.br.infnet.mstasks.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,10 +19,10 @@ public class TaskService {
     private TaskRepository taskRepository;
 
     @Autowired
-    private TaskHistoryService taskHistoryService;
+    private TaskHistoryProducer taskHistoryProducer;
 
     //TODO: Quando criarmos a classe usuario precisaremos alterar a propriedade
-    private String username = "User";
+    private Long userId = 0L;
 
     public List<TaskDTO> getAllTasks() {
         return taskRepository.findAll().stream()
@@ -44,8 +45,7 @@ public class TaskService {
         Task task = Task.fromDTO(taskDTO);
         Task savedTask = taskRepository.save(task);
 
-        // Registrar a criação no histórico
-        taskHistoryService.logCreateAction(savedTask.getId(), username, savedTask.toString());
+        taskHistoryProducer.logCreateAction(savedTask.getId(), userId, savedTask.toString());
         return savedTask.toDTO();
     }
 
@@ -57,17 +57,14 @@ public class TaskService {
         task.setDescription(taskDetails.getDescription());
         Task updatedTask = taskRepository.save(task);
 
-        // Registrar o estado anterior e a atualização no histórico
-        taskHistoryService.logUpdateAction(id, username, oldValue, updatedTask.toString());
+        taskHistoryProducer.logUpdateAction(id, userId, oldValue, updatedTask.toString());
         return updatedTask.toDTO();
     }
 
     public void deleteTask(Long id) {
         Task task = taskRepository.findById(id).orElseThrow(() -> new TaskNotFoundException(id));
 
-        // Registrar a exclusão no histórico
-        taskHistoryService.logDeleteAction(id, username, task.toString());
-
         taskRepository.delete(task);
+        taskHistoryProducer.logDeleteAction(id, userId, task.toString());
     }
 }
