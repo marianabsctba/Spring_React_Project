@@ -33,6 +33,12 @@ public class TaskService {
         return task.toDTO();
     }
 
+    public List<TaskDTO> getTaskByUserId(Long userId) {
+        return taskRepository.findByUserId(userId).stream()
+                .map(Task::toDTO)
+                .collect(Collectors.toList());
+    }
+
     public TaskDTO createTask(TaskDTO taskDTO) {
         Task task = Task.fromDTO(taskDTO);
         Task savedTask = taskRepository.save(task);

@@ -4,8 +4,8 @@ public class TaskDTO {
     private Long id;
     private String title;
     private String description;
+    private Long userId;
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -28,5 +28,13 @@ public class TaskDTO {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+    
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }

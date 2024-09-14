@@ -13,8 +13,9 @@ public class Task {
     private Long id;
     private String title;
     private String description;
+    private Long userId;
 
-    // Getters
+
     public Long getId() {
         return id;
     }
@@ -27,6 +28,9 @@ public class Task {
         return description;
     }
 
+    public Long getUserId() {
+        return userId;
+    }
     // Setters
     public void setId(Long id) {
         this.id = id;
@@ -40,12 +44,16 @@ public class Task {
         this.description = description;
     }
 
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
     // Conversion methods
     public TaskDTO toDTO() {
         TaskDTO taskDTO = new TaskDTO();
         taskDTO.setId(this.id);
         taskDTO.setTitle(this.title);
         taskDTO.setDescription(this.description);
+        taskDTO.setUserId(this.userId);
         return taskDTO;
     }
 
@@ -53,8 +61,10 @@ public class Task {
         Task task = new Task();
         task.setTitle(taskDTO.getTitle());
         task.setDescription(taskDTO.getDescription());
+        task.setUserId(taskDTO.getUserId());
         return task;
     }
+
 
     @Override
     public String toString() {
@@ -62,6 +72,7 @@ public class Task {
                 "ID=" + id +
                 ", Title='" + title + '\'' +
                 ", Description='" + description + '\'' +
+                ", UserId=" + userId +
                 '}';
     }
 }

@@ -70,7 +70,7 @@ public class TaskControllerTest {
         when(taskService.createTask(any(TaskDTO.class))).thenReturn(task);
 
         mockMvc.perform(post("/api/tasks")
-                        .contentType("application/json")
+                        .contentType("application.yaml/json")
                         .content("{\"title\": \"Create a new Task\"}"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.title").value("Create a new Task"));
@@ -85,7 +85,7 @@ public class TaskControllerTest {
         when(taskService.updateTask(eq(1L), any(TaskDTO.class))).thenReturn(task);
 
         mockMvc.perform(put("/api/tasks/1")
-                        .contentType("application/json")
+                        .contentType("application.yaml/json")
                         .content("{\"title\": \"Updated Task\"}"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.title").value("Updated Task"));
