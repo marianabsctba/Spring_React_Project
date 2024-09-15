@@ -21,8 +21,6 @@ public class TaskService {
     @Autowired
     private TaskHistoryProducer taskHistoryProducer;
 
-    //TODO: Quando criarmos a classe usuario precisaremos alterar a propriedade
-    private Long userId = 0L;
 
     public List<TaskDTO> getAllTasks() {
         return taskRepository.findAll().stream()
@@ -45,7 +43,7 @@ public class TaskService {
         Task task = Task.fromDTO(taskDTO);
         Task savedTask = taskRepository.save(task);
 
-        taskHistoryProducer.logCreateAction(savedTask.getId(), userId, savedTask.toString());
+        taskHistoryProducer.logCreateAction(savedTask.getId(), savedTask.getUserId(), savedTask.toString());
         return savedTask.toDTO();
     }
 
@@ -57,7 +55,7 @@ public class TaskService {
         task.setDescription(taskDetails.getDescription());
         Task updatedTask = taskRepository.save(task);
 
-        taskHistoryProducer.logUpdateAction(id, userId, oldValue, updatedTask.toString());
+        taskHistoryProducer.logUpdateAction(id, updatedTask.getUserId(), oldValue, updatedTask.toString());
         return updatedTask.toDTO();
     }
 
@@ -65,6 +63,6 @@ public class TaskService {
         Task task = taskRepository.findById(id).orElseThrow(() -> new TaskNotFoundException(id));
 
         taskRepository.delete(task);
-        taskHistoryProducer.logDeleteAction(id, userId, task.toString());
+        taskHistoryProducer.logDeleteAction(id, task.getUserId(), task.toString());
     }
 }

@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="feat: remove taskHistory files">
       <change afterPath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/TaskControllerTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/TaskServiceTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/TaskTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="feat: remove config files">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" afterDir="false" />
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +70,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "JUnit.TaskControllerTest (1).executor": "Run",
     "JUnit.TaskControllerTest.executor": "Run",
     "JUnit.TaskHistoryProducerTest (1).executor": "Run",
@@ -67,6 +79,10 @@
     "JUnit.TaskServiceTest.createTask_shouldSaveTaskAndLogCreateAction.executor": "Run",
     "JUnit.TaskServiceTest.executor": "Run",
     "JUnit.TaskTest.executor": "Run",
+=======
+    "Maven.ms-tasks [clean].executor": "Run",
+    "Maven.ms-tasks [install].executor": "Run",
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -93,6 +109,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.TaskDTOTest">
     <configuration name="RabbitMQConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ms-tasks" />
@@ -163,6 +180,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="RunManager" selected="Spring Boot.SpringReactProjectApplication">
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Spring_React_Project" />
       <method v="2">
@@ -176,6 +196,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ms-tasks [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="ms-tasks [compile]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="compile" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="SpringReactProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ms-tasks" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="edu.br.infnet.mstasks.SpringReactProjectApplication" />
@@ -185,11 +265,16 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.TaskDTOTest" />
         <item itemvalue="JUnit.TaskHistoryDTOTest" />
         <item itemvalue="JUnit.RabbitMQConfigTest" />
         <item itemvalue="JUnit.TaskTest" />
         <item itemvalue="JUnit.TaskHistoryProducerTest (1)" />
+=======
+        <item itemvalue="Maven.ms-tasks [clean]" />
+        <item itemvalue="Maven.ms-tasks [compile]" />
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
       </list>
     </recent_temporary>
   </component>
@@ -209,10 +294,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726292497390</updated>
+<<<<<<< HEAD
       <workItem from="1726292498400" duration="19240000" />
       <workItem from="1726375140192" duration="6092000" />
       <workItem from="1726415922137" duration="116000" />
       <workItem from="1726418221119" duration="5744000" />
+=======
+      <workItem from="1726292498400" duration="24306000" />
+      <workItem from="1726421545568" duration="2410000" />
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
     </task>
     <task id="LOCAL-00001" summary="feat: adjust project">
       <option name="closed" value="true" />
@@ -230,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726342736714</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: remove config files">
+      <option name="closed" value="true" />
+      <created>1726372456416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726372456416</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +337,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: adjust project" />
     <MESSAGE value="feat: remove taskHistory files" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: remove taskHistory files" />
+    <MESSAGE value="feat: remove config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: remove config files" />
   </component>
 </project>
