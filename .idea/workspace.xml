@@ -4,24 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="feat: create docker file">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+<<<<<<< HEAD
+    <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="feat: remove taskHistory files">
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/TaskControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/TaskServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/TaskTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+=======
+    <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="feat: remove config files">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" afterDir="false" />
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -57,8 +70,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
+    "JUnit.TaskControllerTest (1).executor": "Run",
+    "JUnit.TaskControllerTest.executor": "Run",
+    "JUnit.TaskHistoryProducerTest (1).executor": "Run",
+    "JUnit.TaskHistoryProducerTest.executor": "Run",
+    "JUnit.TaskServiceTest (1).executor": "Run",
+    "JUnit.TaskServiceTest.createTask_shouldSaveTaskAndLogCreateAction.executor": "Run",
+    "JUnit.TaskServiceTest.executor": "Run",
+    "JUnit.TaskTest.executor": "Run",
+=======
     "Maven.ms-tasks [clean].executor": "Run",
     "Maven.ms-tasks [install].executor": "Run",
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -66,8 +90,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.SpringReactProjectApplication.executor": "Run",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/raphael.costa/Desktop/Laboratorio/Infnet/Spring_React_Project/src/main/resources",
+    "last_opened_file_path": "C:/Users/mah_b/OneDrive/Área de Trabalho/Spring_React_Project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,14 +103,86 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks" />
     </key>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="JUnit.TaskDTOTest">
+    <configuration name="RabbitMQConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.br.infnet.mstasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.br.infnet.mstasks" />
+      <option name="MAIN_CLASS_NAME" value="edu.br.infnet.mstasks.RabbitMQConfigTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskDTOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.br.infnet.mstasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.br.infnet.mstasks" />
+      <option name="MAIN_CLASS_NAME" value="edu.br.infnet.mstasks.TaskDTOTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskHistoryDTOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.br.infnet.mstasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.br.infnet.mstasks" />
+      <option name="MAIN_CLASS_NAME" value="edu.br.infnet.mstasks.TaskHistoryDTOTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskHistoryProducerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TaskHistoryProducerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.br.infnet.mstasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.br.infnet.mstasks" />
+      <option name="MAIN_CLASS_NAME" value="edu.br.infnet.mstasks.TaskTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+=======
   <component name="RunManager" selected="Spring Boot.SpringReactProjectApplication">
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Spring_React_Project" />
       <method v="2">
@@ -166,23 +263,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Maven.ms-tasks [clean]" />
-      <item itemvalue="Maven.ms-tasks [compile]" />
-      <item itemvalue="Spring Boot.SpringReactProjectApplication" />
-    </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
+        <item itemvalue="JUnit.TaskDTOTest" />
+        <item itemvalue="JUnit.TaskHistoryDTOTest" />
+        <item itemvalue="JUnit.RabbitMQConfigTest" />
+        <item itemvalue="JUnit.TaskTest" />
+        <item itemvalue="JUnit.TaskHistoryProducerTest (1)" />
+=======
         <item itemvalue="Maven.ms-tasks [clean]" />
         <item itemvalue="Maven.ms-tasks [compile]" />
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -194,8 +294,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726292497390</updated>
+<<<<<<< HEAD
+      <workItem from="1726292498400" duration="19240000" />
+      <workItem from="1726375140192" duration="6092000" />
+      <workItem from="1726415922137" duration="116000" />
+      <workItem from="1726418221119" duration="5744000" />
+=======
       <workItem from="1726292498400" duration="24306000" />
-      <workItem from="1726421545568" duration="10784000" />
+      <workItem from="1726421545568" duration="2410000" />
+>>>>>>> b34c4ce45bcb51eb822d9694dcc16b9750aca672
     </task>
     <task id="LOCAL-00001" summary="feat: adjust project">
       <option name="closed" value="true" />
@@ -221,15 +328,7 @@
       <option name="project" value="LOCAL" />
       <updated>1726372456416</updated>
     </task>
-    <task id="LOCAL-00004" summary="feat: create docker file">
-      <option name="closed" value="true" />
-      <created>1726424200038</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1726424200038</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +338,6 @@
     <MESSAGE value="feat: adjust project" />
     <MESSAGE value="feat: remove taskHistory files" />
     <MESSAGE value="feat: remove config files" />
-    <MESSAGE value="feat: create docker file" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create docker file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: remove config files" />
   </component>
 </project>
