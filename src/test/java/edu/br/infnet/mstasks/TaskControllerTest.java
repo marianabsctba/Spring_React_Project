@@ -1,3 +1,5 @@
+package edu.br.infnet.mstasks;
+
 import edu.br.infnet.mstasks.controller.TaskController;
 import edu.br.infnet.mstasks.dto.TaskDTO;
 import edu.br.infnet.mstasks.service.TaskService;
