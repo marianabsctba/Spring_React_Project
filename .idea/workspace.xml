@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="feat: remove taskHistory files">
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/TaskControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/TaskServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/br/infnet/mstasks/TaskTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/config/CorsConfig.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Rwilliamsc"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Rwilliamsc&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/marianabsctba/Spring_React_Project.git",
-    "accountId": "dc1e7296-a864-4557-bb81-f3480f637b34"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/marianabsctba/Spring_React_Project.git&quot;,
+    &quot;accountId&quot;: &quot;dc1e7296-a864-4557-bb81-f3480f637b34&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -47,9 +49,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2m35bzkFMSea5tNEW8AI1nhZ7oY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -57,6 +59,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.TaskControllerTest (1).executor": "Run",
+    "JUnit.TaskControllerTest.executor": "Run",
+    "JUnit.TaskHistoryProducerTest (1).executor": "Run",
+    "JUnit.TaskHistoryProducerTest.executor": "Run",
+    "JUnit.TaskServiceTest (1).executor": "Run",
+    "JUnit.TaskServiceTest.createTask_shouldSaveTaskAndLogCreateAction.executor": "Run",
+    "JUnit.TaskServiceTest.executor": "Run",
+    "JUnit.TaskTest.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -64,8 +74,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.SpringReactProjectApplication.executor": "Run",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/raphael.costa/Desktop/Laboratorio/Infnet/Spring_React_Project/src/main/java/edu/br/infnet/mstasks",
+    "last_opened_file_path": "C:/Users/mah_b/OneDrive/Área de Trabalho/Spring_React_Project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -82,7 +93,76 @@
       <recent name="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TaskDTOTest">
+    <configuration name="RabbitMQConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.br.infnet.mstasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.br.infnet.mstasks" />
+      <option name="MAIN_CLASS_NAME" value="edu.br.infnet.mstasks.RabbitMQConfigTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskDTOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.br.infnet.mstasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.br.infnet.mstasks" />
+      <option name="MAIN_CLASS_NAME" value="edu.br.infnet.mstasks.TaskDTOTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskHistoryDTOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.br.infnet.mstasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.br.infnet.mstasks" />
+      <option name="MAIN_CLASS_NAME" value="edu.br.infnet.mstasks.TaskHistoryDTOTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskHistoryProducerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TaskHistoryProducerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ms-tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.br.infnet.mstasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.br.infnet.mstasks" />
+      <option name="MAIN_CLASS_NAME" value="edu.br.infnet.mstasks.TaskTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Spring_React_Project" />
       <method v="2">
@@ -103,12 +183,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TaskDTOTest" />
+        <item itemvalue="JUnit.TaskHistoryDTOTest" />
+        <item itemvalue="JUnit.RabbitMQConfigTest" />
+        <item itemvalue="JUnit.TaskTest" />
+        <item itemvalue="JUnit.TaskHistoryProducerTest (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -121,6 +210,9 @@
       <option name="presentableId" value="Default" />
       <updated>1726292497390</updated>
       <workItem from="1726292498400" duration="19240000" />
+      <workItem from="1726375140192" duration="6092000" />
+      <workItem from="1726415922137" duration="116000" />
+      <workItem from="1726418221119" duration="5744000" />
     </task>
     <task id="LOCAL-00001" summary="feat: adjust project">
       <option name="closed" value="true" />
