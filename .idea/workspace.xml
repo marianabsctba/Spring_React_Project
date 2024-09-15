@@ -4,29 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="feat: remove config files">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="a880ec01-d818-415b-aabf-696956f21730" name="Changes" comment="feat: create docker file">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-    </option>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -72,7 +67,7 @@
     "Spring Boot.SpringReactProjectApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/raphael.costa/Desktop/Laboratorio/Infnet/Spring_React_Project/src/main/java/edu/br/infnet/mstasks",
+    "last_opened_file_path": "/Users/raphael.costa/Desktop/Laboratorio/Infnet/Spring_React_Project/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,6 +78,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -170,6 +166,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Maven.ms-tasks [clean]" />
+      <item itemvalue="Maven.ms-tasks [compile]" />
+      <item itemvalue="Spring Boot.SpringReactProjectApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Maven.ms-tasks [clean]" />
@@ -194,7 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726292497390</updated>
       <workItem from="1726292498400" duration="24306000" />
-      <workItem from="1726421545568" duration="2410000" />
+      <workItem from="1726421545568" duration="10784000" />
     </task>
     <task id="LOCAL-00001" summary="feat: adjust project">
       <option name="closed" value="true" />
@@ -220,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726372456416</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: create docker file">
+      <option name="closed" value="true" />
+      <created>1726424200038</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726424200038</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +239,7 @@
     <MESSAGE value="feat: adjust project" />
     <MESSAGE value="feat: remove taskHistory files" />
     <MESSAGE value="feat: remove config files" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: remove config files" />
+    <MESSAGE value="feat: create docker file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create docker file" />
   </component>
 </project>
