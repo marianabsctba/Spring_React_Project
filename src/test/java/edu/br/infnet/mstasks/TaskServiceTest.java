@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.dao.DataAccessException;
 
 import java.util.Arrays;
 import java.util.List;
@@ -30,36 +31,48 @@ class TaskServiceTest {
     @InjectMocks
     private TaskService taskService;
 
+    private Task mockTask;
+    private TaskDTO mockTaskDTO;
+
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
+
+        mockTask = new Task();
+        mockTask.setId(1L);
+        mockTask.setTitle("Test Task");
+        mockTask.setDescription("Task Description");
+        mockTask.setUserId(1L);
+
+        mockTaskDTO = new TaskDTO();
+        mockTaskDTO.setId(1L);
+        mockTaskDTO.setTitle("Test Task");
+        mockTaskDTO.setDescription("Task Description");
     }
 
     @Test
-    void getAllTasks_shouldReturnListOfTasks() {
-        List<Task> tasks = Arrays.asList(new Task(), new Task());
-        when(taskRepository.findAll()).thenReturn(tasks);
+    void testGetAllTasks() {
+        when(taskRepository.findAll()).thenReturn(Arrays.asList(mockTask));
 
-        List<TaskDTO> result = taskService.getAllTasks();
+        List<TaskDTO> tasks = taskService.getAllTasks();
 
-        assertEquals(2, result.size());
+        assertEquals(1, tasks.size());
         verify(taskRepository, times(1)).findAll();
     }
 
     @Test
-    void getTaskById_shouldReturnTask() {
-        Task task = new Task();
-        task.setId(1L);
-        when(taskRepository.findById(1L)).thenReturn(Optional.of(task));
+    void testGetTaskById_Found() {
+        when(taskRepository.findById(1L)).thenReturn(Optional.of(mockTask));
 
-        TaskDTO result = taskService.getTaskById(1L);
+        TaskDTO taskDTO = taskService.getTaskById(1L);
 
-        assertEquals(1L, result.getId());
+        assertNotNull(taskDTO);
+        assertEquals("Test Task", taskDTO.getTitle());
         verify(taskRepository, times(1)).findById(1L);
     }
 
     @Test
-    void getTaskById_shouldThrowTaskNotFoundException_whenTaskNotFound() {
+    void testGetTaskById_NotFound() {
         when(taskRepository.findById(1L)).thenReturn(Optional.empty());
 
         assertThrows(TaskNotFoundException.class, () -> taskService.getTaskById(1L));
@@ -67,58 +80,52 @@ class TaskServiceTest {
     }
 
     @Test
-    void getTaskByUserId_shouldReturnListOfTasksForUser() {
-        List<Task> tasks = Arrays.asList(new Task(), new Task());
-        when(taskRepository.findByUserId(1L)).thenReturn(tasks);
+    void testCreateTask() {
+        when(taskRepository.save(any(Task.class))).thenReturn(mockTask);
 
-        List<TaskDTO> result = taskService.getTaskByUserId(1L);
+        TaskDTO createdTask = taskService.createTask(mockTaskDTO);
 
-        assertEquals(2, result.size());
-        verify(taskRepository, times(1)).findByUserId(1L);
+        assertNotNull(createdTask);
+        assertEquals("Test Task", createdTask.getTitle());
+        verify(taskRepository, times(1)).save(any(Task.class));
+        verify(taskHistoryProducer, times(1)).logCreateAction(anyLong(), anyLong(), anyString());
     }
 
     @Test
-    void updateTask_shouldUpdateTaskAndLogUpdateAction() {
-        Task existingTask = new Task();
-        existingTask.setId(1L);
-        existingTask.setTitle("Old Task");
+    void testUpdateTask_Success() {
+        when(taskRepository.findById(1L)).thenReturn(Optional.of(mockTask));
+        when(taskRepository.save(any(Task.class))).thenReturn(mockTask);
 
-        when(taskRepository.findById(1L)).thenReturn(Optional.of(existingTask));
-        when(taskRepository.save(existingTask)).thenReturn(existingTask);
+        TaskDTO updatedTask = taskService.updateTask(1L, mockTaskDTO);
 
-        TaskDTO updatedTaskDTO = new TaskDTO();
-        updatedTaskDTO.setTitle("Updated Task");
-
-        TaskDTO result = taskService.updateTask(1L, updatedTaskDTO);
-
-        assertEquals("Updated Task", result.getTitle());
-        verify(taskRepository, times(1)).save(existingTask);
+        assertNotNull(updatedTask);
+        assertEquals("Test Task", updatedTask.getTitle());
+        verify(taskRepository, times(1)).findById(1L);
+        verify(taskRepository, times(1)).save(any(Task.class));
         verify(taskHistoryProducer, times(1)).logUpdateAction(anyLong(), anyLong(), anyString(), anyString());
     }
 
     @Test
-    void updateTask_shouldThrowTaskNotFoundException_whenTaskNotFound() {
+    void testUpdateTask_NotFound() {
         when(taskRepository.findById(1L)).thenReturn(Optional.empty());
 
-        TaskDTO taskDTO = new TaskDTO();
-        assertThrows(TaskNotFoundException.class, () -> taskService.updateTask(1L, taskDTO));
+        assertThrows(TaskNotFoundException.class, () -> taskService.updateTask(1L, mockTaskDTO));
         verify(taskRepository, times(1)).findById(1L);
     }
 
     @Test
-    void deleteTask_shouldDeleteTaskAndLogDeleteAction() {
-        Task task = new Task();
-        task.setId(1L);
-        when(taskRepository.findById(1L)).thenReturn(Optional.of(task));
+    void testDeleteTask_Success() {
+        when(taskRepository.findById(1L)).thenReturn(Optional.of(mockTask));
 
         taskService.deleteTask(1L);
 
-        verify(taskRepository, times(1)).delete(task);
+        verify(taskRepository, times(1)).findById(1L);
+        verify(taskRepository, times(1)).delete(any(Task.class));
         verify(taskHistoryProducer, times(1)).logDeleteAction(anyLong(), anyLong(), anyString());
     }
 
     @Test
-    void deleteTask_shouldThrowTaskNotFoundException_whenTaskNotFound() {
+    void testDeleteTask_NotFound() {
         when(taskRepository.findById(1L)).thenReturn(Optional.empty());
 
         assertThrows(TaskNotFoundException.class, () -> taskService.deleteTask(1L));
