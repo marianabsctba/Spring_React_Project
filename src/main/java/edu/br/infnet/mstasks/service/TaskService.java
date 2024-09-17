@@ -5,6 +5,9 @@ import edu.br.infnet.mstasks.exception.TaskNotFoundException;
 import edu.br.infnet.mstasks.model.Task;
 import edu.br.infnet.mstasks.producer.TaskHistoryProducer;
 import edu.br.infnet.mstasks.repository.TaskRepository;
+import edu.br.infnet.mstasks.util.Mapper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.dao.DataAccessException;
@@ -25,6 +28,7 @@ public class TaskService {
     @Autowired
     private TaskHistoryProducer taskHistoryProducer;
 
+<<<<<<< HEAD
     public List<TaskDTO> getAllTasks() {
         try {
             return taskRepository.findAll().stream()
@@ -34,6 +38,23 @@ public class TaskService {
             logger.error("Error while fetching tasks.", e);
             throw new RuntimeException("Error while fetching tasks.", e);
         }
+=======
+    Logger logger= LogManager.getLogger(TaskService.class);
+
+    public List<TaskDTO> getAllTasks() {
+        try{
+            List<TaskDTO> tasks = taskRepository.findAll().stream()
+                    .map(Task::toDTO)
+                    .collect(Collectors.toList());
+            logger.info("TaskService:getAllTasks: {}", Mapper.mapToJsonString(tasks) );
+            return tasks;
+        }
+        catch (Exception e){
+            logger.error("TaskService:getAllTasks: {}", e.getMessage());
+            throw new RuntimeException("TaskService:getAllTasks: " + e.getMessage());
+        }
+
+>>>>>>> b302904b2c84caba7d1eae026d088b9865034b9e
     }
 
     public TaskDTO getTaskById(Long id) {
