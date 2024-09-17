@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04a92182-0a0f-4974-abc9-32ef102a8ad4" name="Changes" comment="add swagger">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/br/infnet/mstasks/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/br/infnet/mstasks/service/TaskService.class" afterDir="false" />
-    </list>
+    <list default="true" id="04a92182-0a0f-4974-abc9-32ef102a8ad4" name="Changes" comment="add swagger" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +103,7 @@
       <workItem from="1726535527392" duration="585000" />
       <workItem from="1726536276434" duration="3210000" />
       <workItem from="1726605895677" duration="1190000" />
-      <workItem from="1726610513252" duration="303000" />
+      <workItem from="1726610513252" duration="727000" />
     </task>
     <servers />
   </component>
